@@ -10,7 +10,6 @@ QRCodeGen = (data) =>{
 }
 
 sub_btn.addEventListener("click", () => {
-  setTimeout(() => {
     let url = document.getElementsByClassName("input-data")[0].value;
     if (url != "") {
       console.log(url);
@@ -18,6 +17,4 @@ sub_btn.addEventListener("click", () => {
     } else {
       alert("Invalid Input! Please Type something");
     }
-    
-  },500);
 });
