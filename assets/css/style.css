@@ -124,3 +124,8 @@ p{
         width: 100%;
     }
 }
+.input-error{
+    color: red;
+    text-align: center;
+    filter: drop-shadow(2px  2px 5px red);
+}
