@@ -1,7 +1,7 @@
 let sub_btn = document.querySelector(".sub-btn");
 
 QRCodeGen = (data) =>{
-  var typeNumber = 5;
+  var typeNumber = 6;
   var errorCorrectionLevel = "H";
   var qr = qrcode(typeNumber, errorCorrectionLevel);
   qr.addData(data);
