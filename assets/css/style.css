@@ -1,0 +1,126 @@
+*{
+     padding:0;
+     margin:0;
+     box-sizing: border-box;
+}
+body{
+    /* background-image: linear-gradient( to right,#518dd5,#acd1ff); */
+    background-image: url(../istockphoto-1173257070-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease-in-out 1s;
+    overflow-y: hidden;
+}
+main{
+    position: relative;
+}
+main > div{
+    display: flex;   
+}
+h1{
+    font-size: 50px;
+    color: aquamarine;
+    filter: drop-shadow(2px  2px 5px black);
+    
+}
+p{
+    filter: drop-shadow(2px  2px 5px black);
+    font-size: 15px;
+    line-height: 50px;
+}
+.sec1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.Qr-container{
+    background-color: aliceblue;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px rgb(34, 51, 230);
+}
+.user-input{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.input-data{
+    padding: 5px 5px;
+}
+.sub-btn,button{
+    background-color: rgb(0, 110, 255);
+    border: none;
+    padding: 7px;
+    color: rgb(180, 224, 255);
+    cursor: pointer;
+}
+.download{
+    padding: 8px 9px;
+    font-weight: 700;
+}   
+.qrcode{
+    width: 230px;
+    height: 230px;
+    border: 0.7px solid black;
+    margin: 10px 0;
+}
+#placeHolder img{
+    width: 230px;
+    height: 230px;
+}
+.bottm-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.sec2{
+    width: 50%;
+    text-align: center;
+}
+.sec2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.svg{
+    width: 100%;
+    z-index: ;
+}
+.svg svg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: drop-shadow(1px 0 9px rgba(119, 255, 241, 0.345) );
+}
+.svg svg:nth-child(1){
+    bottom: 0;
+}
+.svg svg:nth-child(2){
+    bottom: -30px;
+}
+.svg svg:nth-child(3){
+    bottom: -60px;
+}
+.svg svg:nth-child(4){
+    bottom: -90px;
+}
+@media screen and (max-width:1000px) {
+    .svg{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:655px) {
+    body{
+        overflow: scroll;
+    }
+    main div{
+    }
+    .sec2{
+        display: none;
+    }
+    .sec1{
+        width: 100%;
+    }
+}
