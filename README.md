@@ -1,4 +1,4 @@
-# Project - Number Guessing Game
+# Project - QR Code Generator
 
 ## Table of contents
 
